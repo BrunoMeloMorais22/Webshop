@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 2px;
+    display: inline-block;
+    background: rgb(204, 204, 204);
+}
+
+form > label{
+    font-weight: 900;
+}
+
+form > input{
+    font-weight: 600;
+    padding: 4px;
+}
+
+form > a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+form > a:hover{
+    text-decoration: underline;
+}
+
+form > button{
+    width: 290px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: rgb(10, 228, 10);;
+}
+
+button:hover{
+    background: rgb(29, 245, 29);
+    transition: ease-in-out 0.1s;
+}
+
