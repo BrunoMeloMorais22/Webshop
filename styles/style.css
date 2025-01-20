@@ -219,6 +219,9 @@ button{
 #produtos > h2{
     text-align: center;
     font-size: 39px;
+    background: rgb(172, 172, 172);
+    padding: 15px;
+    font-size: 40px;
 }
 
 #chinelo{
@@ -249,12 +252,12 @@ button{
 #container3{
     display: inline;
     position: absolute;
-    margin-top: 1485px;
+    margin-top: 1525px;
     top: 0;
     left: 0;
     height: 200px;
     padding: 10px;
-    margin-left: 430px;
+    margin-left: 30px;
     border-radius: 20px;
     background: rgb(168, 168, 168);
 }
