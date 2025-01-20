@@ -218,7 +218,7 @@ button{
 
 #produtos > h2{
     text-align: center;
-    font-size: 32px;
+    font-size: 39px;
 }
 
 #chinelo{
@@ -242,7 +242,6 @@ button{
 
 #chinelo > p{
     margin-left: 250px;
-    font-weight: 800;
     text-align: justify;
     font-size: 17px;
 }
@@ -271,7 +270,6 @@ button{
 
 #container3 > p{
     margin-left: 250px;
-    font-weight: 800;
     text-align: justify;
     font-size: 17px;
 }
@@ -298,24 +296,10 @@ button{
 
 #container4 > p{
     margin-left: 250px;
-    font-weight: 900;
 }
-
 
 #imagem-crocs{
     margin-left: 35px;
-}
-
-footer{
-    margin-top: 20px;
-    padding: 3px;
-    font-weight: 900;
-    text-align: center;
-    background: rgb(194, 194, 194);
-}
-
-footer > a{
-    font-weight: 800;
 }
 
 #lancamentos{
@@ -351,6 +335,45 @@ footer > a{
 #nike-air > p{
     margin-left: 263px;
     text-align: justify;
+}
+
+
+#next-crave{
+    margin-left: 30px;
+    width: 920px;
+    height: 220px;
+    border-radius: 20px;
+    background: rgb(197, 197, 197);
+}
+
+#imagem-next-crave{
+    margin-top: 30px;
+    margin-left: -680px;
+    width: 200px;
+}
+
+#next-crave > h2{
+    margin-top: -140px;
+    margin-left: -20px;
+}
+
+#next-crave > p{
+    margin-left: 263px;
+    text-align: justify;
+}
+
+
+
+footer{
+    margin-top: 20px;
+    padding: 3px;
+    font-weight: 900;
+    text-align: center;
+    background: rgb(194, 194, 194);
+}
+
+footer > a{
+    font-weight: 800;
 }
 
 
