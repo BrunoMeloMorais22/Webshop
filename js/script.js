@@ -10,6 +10,3 @@ function sair(){
     let imagem = document.getElementById('imagem')
     imagem.style.transform = "scale(1)"
 }
-
-
-
