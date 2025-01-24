@@ -23,6 +23,10 @@ header > h1{
     margin-left: 60px;
 }
 
+#perfil:hover{
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     gap: 20px;
@@ -364,6 +368,16 @@ button{
     margin-left: 263px;
     text-align: justify;
 }
+
+#depoimentos > h2{
+    margin-top: 20px;
+    background: rgb(155, 154, 154);
+    padding: 15px;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
 
 
 
