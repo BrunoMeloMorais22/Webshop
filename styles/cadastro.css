@@ -27,7 +27,14 @@ form > label{
 
 form > input{
     font-weight: 800;
-    padding: 4px;
+    width: 300px;
+    border: 2px solid black;
+    margin-left: 5px;
+    padding: 6px;
+}
+
+form ::placeholder{
+    margin-left: 5px;
 }
 
 form > a {
@@ -46,7 +53,7 @@ a:hover{
 }
 
 i{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 form > button{

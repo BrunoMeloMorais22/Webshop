@@ -23,6 +23,10 @@ header > h1{
     margin-left: 60px;
 }
 
+header > h1:hover{
+    cursor: pointer;
+}
+
 #perfil:hover{
     cursor: pointer;
 }
@@ -377,9 +381,6 @@ button{
     font-weight: 700;
     text-align: center;
 }
-
-
-
 
 footer{
     margin-top: 20px;
