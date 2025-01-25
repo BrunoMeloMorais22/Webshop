@@ -1,68 +1,64 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    margin: 0; 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
-form {
+form{
     text-align: center;
+    margin-left: 500px;
+    margin-top: 100px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow:  2px 2px 2px;
+    display: inline-block;
     background: rgb(204, 204, 204);
-    width: 90%; 
-    max-width: 400px; 
-    margin: auto; 
 }
 
-form > p{
-    margin-top: -30px;
-}
-
-form > input, form > button {
-    width: 100%; 
-}
-
-@media (max-width: 768px) {
-    form {
-        padding: 15px;
-        width: 90%; 
-    }
-
-    form > input, form > button {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    form {
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    form > h1 {
-        font-size: 1.2rem;
-    }
-
-    form > input, form > button {
-        font-size: 0.9rem;
-    }
+form > label{
+    font-weight: 900;
 }
 
 form > input{
-    padding: 5px;
-    border-radius: 20px;
+    font-weight: 600;
+    margin-top: -2px;
+    width: 300px;
     border: 2px solid black;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+}
+
+form > i{
+    font-size: 25px;
+}
+
+form > a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+form > a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+    form{
+        background: green;
+    }
 }
 
 form > button{
-    padding: 5px;
-    border-radius: 20px;
-    border: 2px solid black;
-    font-family: 'Courier New', Courier, monospace;
+    width: 290px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background: rgb(10, 228, 10);;
+}
+
+button:hover{
+    background: rgb(29, 245, 29);
+    transition: ease-in-out 0.1s;
 }

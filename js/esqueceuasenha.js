@@ -11,9 +11,9 @@ document.getElementById('enviar').addEventListener('click', function(event){
 
     else{
         alert('Email enviado com sucesso')
-    }
 
-    setTimeout(() => {
-        window.location.href = 'login.html'
-    }, 2000);
+        setTimeout(() => {
+            window.location.href = 'login.html'
+        }, 2000);
+    }
 })
