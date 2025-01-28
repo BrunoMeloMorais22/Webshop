@@ -59,8 +59,8 @@ i{
 @media (max-width: 678px){
     form{
         width: 90%;
-        margin-top: 10px;
-        margin-left: 25px;
+        margin-top: 25px;
+        margin-left: 20px;
     }
     
     form > input{
