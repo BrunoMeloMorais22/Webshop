@@ -56,6 +56,25 @@ i{
     font-size: 20px;
 }
 
+@media (max-width: 678px){
+    form{
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    
+    form > input{
+        margin-top: 24px;
+    }
+
+    form > i{
+        position: absolute;
+        text-align: center; 
+        margin-left: 140px;
+    }
+
+    
+}
 form > button{
     width: 300px;
     padding: 5px;
