@@ -11,6 +11,10 @@ document.getElementById('formLogin').addEventListener('submit', function(event){
     if(emailLogin === emailSalvo && senhaLogin === senhaSalva){
         feedbackLogin.textContent = "Login Bem Sucedido"
         feedbackLogin.style.color = "green"
+
+        setTimeout(() => {
+            window.location.href = "index.html"
+        }, 1000);
     }
 
     else{
