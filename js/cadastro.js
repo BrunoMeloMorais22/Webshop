@@ -2,6 +2,7 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     event.preventDefault()
 
     let emailCadastro = document.getElementById('emailCadastro').value
+    let nomeUsuario = document.getElementById("nomeUsuario").value
     let senhaCadastro = document.getElementById('senhaCadastro').value
     let confirmarsenha = document.getElementById('confirmarsenha').value
     let feedbackCadastro = document.getElementById('feedbackCadastro')
@@ -19,12 +20,13 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
         localStorage.setItem('email', emailCadastro)
         localStorage.setItem('senha', senhaCadastro)
 
-        feedbackCadastro.textContent = "Conta Criada com sucesso"
+        feedbackCadastro.textContent = "Conta Criada com sucesso. Faça Login."
         feedbackCadastro.style.color = "green"
     }
 
     else{
         feedbackCadastro.textContent = "A senha precisa conter: 8 caracteres, 1 letra maiúscula, 1 caractere especial e 1 número"
-        feedbackCadastro.color = "red"
+        feedbackCadastro.style.textAlign = "justify"
+        feedbackCadastro.style.color = "red"
     }
 })
