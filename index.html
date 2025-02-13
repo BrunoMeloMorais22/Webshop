@@ -1,101 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-    <link rel="icon" type="png" href="images/picrew-jujuba.png">
-    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>CyberProdutos</title>
 </head>
-
 <body>
-    <div class="formulario-container">
-        <div class="coluna-1">
-            <img src="assets/bruno.jpg" alt="">
-            <p class="words">Faça login com a sua conta para acessar diversas funcionalidades desse site <span>incrível</span>!!</p>
+    <header>
+        <i onclick="carrinhoCompras()" class="fa-solid fa-cart-shopping"></i>
+        <h1 class="slide">CyberProdutos</h1>
+        <nav>
+            <a href="#sobrenos">Sobre Nós</a>
+            <a href="/login.html">Fazer Login</a>
+            <a href="/cadastro.html">Fazer Cadastro</a>
+        </nav>
+        
+    </header>
+
+    <hr>
+    <main>
+        <section id="menu">
+            <div id="container">
+                <h1>CyberProdutos</h1>
+                <br>
+                <p>Aqui você pode comprar produtos de alta qualidade <br> que cambem no seu bolso.</p>
+                <br>
+                <a href="#produtos"><button class="button">Comprar agora</button></a>
+
+                <div id="carrinho"></div>
+            </div>
+        </section>
+        <div id="container2">
+            <section id="menu2"></section>
+            <h1 class="button">Oferta Disponível</h1>
+            <br>
+            <div id="produto">
+                <h2>Tênis Unissex</h2>
+                <br>
+                <img id="imagem" onmouseover="porcima()" onmouseout="sair()" src="assets/0.webp" alt="Tênis unissex com tamanhos diferentes">
+                <br><br>
+                <p class="lateral">De <del>R$199,99</del> por <strong> R$99,99</strong></p>
+                <br>
+                <button class="button" onclick="adicionaraocarrinho()">Adicionar ao Carrinho</button>
+            </div>
         </div>
 
-        <div class="coluna-2">
-            <div class="btn-box">
-                <button class="btn-1" id="login">Entrar</button>
-                <button class="btn-2" id="registro">Criar Conta</button>
+        <section id="sobrenos">
+            <h2>Sobre nós</h2>
+            <p>Somos uma empresa criada em 2025 com somente um objetivo: se tornar a maior do mundo. Desde o início, buscamos inovar e tranformar o mercado com soluções inteligentes, eficientes e impactantes. Acreditamos em cada um dos nosso funcionários, na busca constante por melhorias e na dedicação incansável.</p>
+        </section>
+
+        <section id="menu3">
+            <h2>O que esperar de nós</h2>
+            <div class="card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p class="escuros">Entregas rápidas</p>
             </div>
 
-            <form class="login-formulario" id="formLogin">
-                <div class="titulo">
-                    <span>Entrar</span>
-                </div>
-                <div class="formulario-inputs">
-                    <div class="input-box">
-                        <input type="text" class="campo-input" id="emailLogin" placeholder="Usuário" required>
-                        <i class="bx bx-user icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="campo-input" id="senhaLogin" placeholder="Senha" required>
-                        <i class="bx bx-lock-alt icon"></i>
-                    </div>
-                    <div class="esqueceu-senha">
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
-                    <div class="input-box">
-                        <button type="submit" class="input-submit">
-                            <span>Entrar</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </button>
-                    </div>
-                    <div id="feedbackLogin"></div>
-                </div>
-                <div class="social-login">
-                    <i class="bx bxl-google"></i>
-                    <i class="bx bxl-facebook"></i>
-                    <i class="bx bxl-github"></i>
-                </div>
-            </form>
+            <div class="card">
+                <i class="fa-solid fa-money-bill"></i>
+                <p>Preços que cabem no seu bolso</p>
+            </div>
 
-            <form class="registro-formulario" id="formCadastro">
-                <div class="titulo">
-                    <span>Criar Conta</span>
-                </div>
-                <div class="formulario-inputs">
-                    <div class="input-box">
-                        <input type="email" class="campo-input" id="emailCadastro" placeholder="E-mail" required>
-                        <i class="bx bx-envelope icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="campo-input" id="nomeUsuario" placeholder="Nome de usuário" required>
-                        <i class="bx bx-user icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="campo-input" id="senhaCadastro" placeholder="Crie sua senha" required>
-                        <i class="bx bx-lock-alt icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="campo-input" id="confirmarsenha" placeholder="Repita a senha" required>
-                        <i class="bx bx-lock-alt icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <button type="submit" class="input-submit">
-                            <span>Criar Conta</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </button>
-                    </div>
-                    <div id="feedbackCadastro"></div>
-                </div>
-                <div class="social-login">
-                    <i class="bx bxl-google"></i>
-                    <i class="bx bxl-facebook"></i>
-                    <i class="bx bxl-twitter"></i>
-                    <i class="bx bxl-github"></i>
-                </div>
-            </form>
-        </div>
-    </div>
+            <div class="card">
+                <i class="fa-solid fa-star"></i>
+                <p>Qualidade em nossos produtos</p>
+            </div>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/cadastro.js"></script>
-    <script src="/js/login.js"></script>
+            <div class="card">
+                <i class="fa-regular fa-credit-card"></i>
+                <p>Pagamentos seguros</p>
+            </div>
+        </section><br><br>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2><br>
+            <div id="chinelo">
+                <img id="imagem-chinelo" src="assets/chinelo.jpeg" alt="">
+                <h2>Chinelo Masculino</h2><br>
+                <p>Chinelo Masculino, todo branco e acabamento liso</p><br>
+                <p>Diferente tipos de tamanhos</p><br>
+                <p>Por <strong>R$79,99</strong> <button onclick="adicionaraocarrinho()" class="button">Adicionar ao Carrinho</button></p>
+            </div>
+
+            <div id="container3">
+                <img id="imagem-tenis" src="assets/0.webp" alt="">
+                <h2>Tênis Unissex</h2><br>
+                <p>Tênis casual unissex,com design minimalista e acabamento liso.</p><br>
+                <p>Diferente tipos de tamanhos</p><br>
+                <p>Por<strong> R$99,99</strong> <button onclick="adicionaraocarrinho()" class="button">Adicionar ao Carrinho</button></p>
+            </div>
+
+            <div id="container4">
+                <img id="imagem-crocs" src="assets/crocs.webp" alt="">
+                <h2>Crocs Feminino</h2><br>
+                <p>Crocs Feminino da cor rosa com branco, confortável.</p><br>
+                <p>Tamanho Único <small>(25)</small> </p><br>
+                <p>Por<strong> R$89,99</strong> <button onclick="adicionaraocarrinho()" class="button">Adicionar ao Carrinho</button></p>
+            </div>
+        </section><br><br>
+
+        <section id="lancamentos">
+            <h2>Lançamentos</h2>
+            <br>
+            <div id="nike-air">
+                <img id="nike-air-tenis" src="assets/nike air.jpeg" alt="">
+                <h2>Tênis Masculino</h2><br>
+                <p>Tênis branco, confortável, com detalhe minimalista</p><br>
+                <p>Diferentes tamanhos</p><br>
+                <p>Por <strong>R$199,99</strong> <button onclick="adicionaraocarrinho()" class="button">Adicionar ao Carrinho</button> </p>
+            </div>
+
+            <br>
+
+            <div id="next-crave">
+                <img id="imagem-next-crave" src="assets/NextCrave.jpg" alt="">
+                <h2>Tênis Masculino Preto</h2><br>
+                <p>Tênis branco, confortável, com detalhe minimalista</p><br>
+                <p>Diferentes tamanhos</p><br>
+                <p>Por <strong>R$199,99</strong> <button onclick="adicionaraocarrinho()" class="button">Adicionar ao Carrinho</button> </p>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Avaliações</h2>
+        </section>
+    </main>
+
+    <footer> &copy; 2025 Feito por Bruno Melo de Morais | <a href="https://www.linkedin.com/in/bruno-morais-6b0256235/">LinkedIn</a</footer>
+
+    <script src="js/script2.js"></script>
+    <script src="js/carrinhocompras.js"></script>
 </body>
-
 </html>

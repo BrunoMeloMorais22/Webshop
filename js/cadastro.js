@@ -2,7 +2,6 @@ document.getElementById('formCadastro').addEventListener('submit', function(even
     event.preventDefault()
 
     let emailCadastro = document.getElementById('emailCadastro').value
-    let nomeUsuario = document.getElementById("nomeUsuario").value
     let senhaCadastro = document.getElementById('senhaCadastro').value
     let confirmarsenha = document.getElementById('confirmarsenha').value
     let feedbackCadastro = document.getElementById('feedbackCadastro')

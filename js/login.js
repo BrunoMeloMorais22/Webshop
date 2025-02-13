@@ -13,7 +13,7 @@ document.getElementById('formLogin').addEventListener('submit', function(event){
         feedbackLogin.style.color = "green"
 
         setTimeout(() => {
-            window.location.href = "index2.html"
+            window.location.href = "index.html"
         }, 1000);
     }
 
