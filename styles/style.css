@@ -6,6 +6,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
     scroll-behavior: smooth;
@@ -442,6 +446,31 @@ footer{
 
 footer > a{
     font-weight: 800;
+}
+
+.container_avaliacoes{
+    display: inline-block;
+    background: rgb(178, 178, 179);
+    width: 300px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.container_avaliacoes:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.carts{
+    padding: 20px;
+}
+
+.carts > h2{
+    text-align: center;
+}
+
+.carts > p{
+    text-align: center;
 }
 
 
