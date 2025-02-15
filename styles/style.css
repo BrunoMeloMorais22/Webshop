@@ -438,7 +438,7 @@ button{
 
 footer{
     margin-top: 20px;
-    padding: 3px;
+    padding: 10px;
     font-weight: 900;
     text-align: center;
     background: rgb(194, 194, 194);
@@ -471,6 +471,7 @@ footer > a{
 
 .carts > p{
     text-align: center;
+    font-weight: bold;
 }
 
 
